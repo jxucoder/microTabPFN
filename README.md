@@ -56,13 +56,6 @@ uv run python microtabpfn.py
 
 Educational implementation: binary classification, 4 features, ~100 samples. Full TabPFN supports multi-class, 500 features, 50K samples.
 
-## What i kept
-
-- **SCM + BNN prior**: fake data that look like real tabular data
-- **Two-axis attention**: attention on features and samples, both direction
-- **Permutation invariance**: shuffle column or row, still work
-- **In-context learning**: test look at train to guess answer
-
 ## Design Decisions (vs nanoTabPFN)
 
 Compared to [nanoTabPFN](https://arxiv.org/abs/2511.03634), i made following changes for educational clarity:
@@ -74,6 +67,12 @@ Compared to [nanoTabPFN](https://arxiv.org/abs/2511.03634), i made following cha
 | Single 210-line file | Can read everything top-to-bottom |
 
 There is no multi-class support and batching. And this is okay for educational / "micro" purpose.
+
+**What i kept**:
+- **SCM + BNN prior**: fake data that look like real tabular data
+- **Two-axis attention**: attention on features and samples, both direction
+- **Permutation invariance**: shuffle column or row, still work
+- **In-context learning**: test look at train to guess answer
 
 ## Acknowledgments
 
