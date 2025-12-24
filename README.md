@@ -58,7 +58,10 @@ Educational implementation: binary classification, 4 features, ~100 samples. Ful
 
 ## What i kept
 
-✅ SCM + BNN prior ✅ Two-axis attention ✅ Permutation invariance ✅ In-context learning
+- **SCM + BNN prior**: fake data that look like real tabular data
+- **Two-axis attention**: attention on features and samples, both direction
+- **Permutation invariance**: shuffle column or row, still work
+- **In-context learning**: test look at train to guess answer
 
 ## Design Decisions (vs nanoTabPFN)
 
