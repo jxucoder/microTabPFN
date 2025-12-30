@@ -1,6 +1,6 @@
 # microTabPFN
 
-A minimal ("micro") code of [TabPFN](https://github.com/PriorLabs/TabPFN) in **~210 lines** (~100 lines of core code ignoreing the comments).
+A minimal ("micro") code of [TabPFN](https://github.com/PriorLabs/TabPFN) in **~210 lines** (~100 lines of core code ignoring the comments).
 
 Inspired by [micrograd](https://github.com/karpathy/micrograd) and [nanoTabPFN](https://github.com/automl/nanoTabPFN).
 
