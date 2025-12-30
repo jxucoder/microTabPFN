@@ -92,6 +92,9 @@ class Block(nn.Module):
         a_tr, _ = self.attn_row(tr, tr, tr)   # train self-attention
         a_te, _ = self.attn_row(te, tr, tr)   # test → train cross-attention
         x = self.ln2(torch.cat([tr + a_tr, te + a_te], 1).transpose(0, 1))
+        # Equivalent but simpler (https://github.com/jxucoder/microTabPFN/issues/1):
+        # a, _ = self.attn_row(xt, xt[:, :n_train], xt[:, :n_train])  # all queries → train kv
+        # x = self.ln2((xt + a).transpose(0, 1))
         
         return self.ln3(x + self.ffn(x))
 
